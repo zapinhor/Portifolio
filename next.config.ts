@@ -2,8 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: "/Portifolio",
-  assetPrefix: "/Portifolio",
+  basePath: "/Portfolio",
+  assetPrefix: "/Portfolio",
   trailingSlash: true,
   typescript: { ignoreBuildErrors: true },
   experimental: { workerThreads: true, cpus: 1 },
