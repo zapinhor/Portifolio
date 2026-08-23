@@ -1,6 +1,6 @@
 import GameCarousel from "./GameCarousel";
 
-const asset = (path: string) => `/Portifolio${path}`;
+const asset = (path: string) => `/Portfolio${path}`;
 
 const smaugProjects = [
   {
