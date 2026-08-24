@@ -156,12 +156,7 @@ export default function Home() {
         </div>
         <article className="pokegotchi-project" id="pokegotchi">
           <div className="pokegotchi-preview" aria-label="Representação visual da interface retrô do Pokégotchi">
-            <div className="pixel-screen">
-              <span className="pixel-version">POCKET PARTNER · V2.2</span>
-              <strong>POKÉGOTCHI</strong>
-              <div className="pixel-pet" aria-hidden="true"><i /><i /><i /><i /><i /></div>
-              <small>COLOR</small>
-            </div>
+            <img src={asset("/pokegotchi.png")} alt="Tela inicial do Pokégotchi com Pikachu, opções para continuar ou começar uma nova jornada e aviso de localização" />
           </div>
           <div className="pokegotchi-copy">
             <span className="project-type">Projeto autoral · Aplicação web</span>
