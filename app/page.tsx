@@ -69,7 +69,7 @@ export default function Home() {
         <a className="name" href="#inicio">Danilo Petraglia</a>
         <nav aria-label="Navegação principal">
           <a href="#smaug">SMAUG</a>
-          <a href="#pokemon-tamagotchi">Pokémon Tamagotchi</a>
+          <a href="#pokegotchi">Pokégotchi</a>
           <a href="#sobre">Sobre</a>
           <a href="#contato">Contato</a>
         </nav>
@@ -154,6 +154,29 @@ export default function Home() {
           <h2>Sites claros, responsivos<br />e pensados para pessoas.</h2>
           <div><p>Desenvolvimento de páginas e interfaces para a web com atenção à estrutura, hierarquia visual e adaptação entre desktop e dispositivos móveis.</p><div className="web-stack"><span>Front-end</span><span>WordPress</span><span>UI / UX</span></div></div>
         </div>
+        <article className="pokegotchi-project" id="pokegotchi">
+          <div className="pokegotchi-preview" aria-label="Representação visual da interface retrô do Pokégotchi">
+            <div className="pixel-screen">
+              <span className="pixel-version">POCKET PARTNER · V2.2</span>
+              <strong>POKÉGOTCHI</strong>
+              <div className="pixel-pet" aria-hidden="true"><i /><i /><i /><i /><i /></div>
+              <small>COLOR</small>
+            </div>
+          </div>
+          <div className="pokegotchi-copy">
+            <span className="project-type">Projeto autoral · Aplicação web</span>
+            <h3>Pokégotchi</h3>
+            <p>Um bichinho virtual inspirado em Pokémon, Tamagotchi e nos jogos clássicos de Game Boy. A experiência reúne cuidados em tempo real, inventário, PokéMart, quartos e Boxes, capturas, minigames e batalhas com golpes e efetividade de tipos.</p>
+            <p>O projeto consome dados e sprites da PokéAPI, salva o progresso no navegador e utiliza geolocalização para adaptar clima e ciclo de dia e noite.</p>
+            <div className="pokegotchi-stack" aria-label="Tecnologias utilizadas">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>PokéAPI</span><span>Open-Meteo</span><span>LocalStorage</span><span>GitHub Pages</span>
+            </div>
+            <div className="pokegotchi-actions">
+              <a className="live-button" href="https://zapinhor.github.io/Pokegotchi/" target="_blank" rel="noreferrer">Acessar o Pokégotchi <Arrow /></a>
+              <a className="source-button" href="https://github.com/zapinhor/Pokegotchi" target="_blank" rel="noreferrer">Ver código no GitHub <Arrow /></a>
+            </div>
+          </div>
+        </article>
         <a className="web-project" href="https://www.canva.com/design/DAFT1FEBIFU/opW7u-kxTWT3RjzeynqKUA/edit" target="_blank" rel="noreferrer" aria-label="Abrir apresentação do projeto acadêmico de e-commerce no Canva">
           <div><span>Projeto acadêmico</span><h3>E-commerce de moda</h3></div>
           <p>Projeto de site para uma loja virtual de roupas. Embora não esteja mais publicado, a apresentação registra a proposta visual e a experiência desenvolvida.</p>
