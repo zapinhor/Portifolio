@@ -11,6 +11,8 @@ const smaugProjects = [
     description: "Um jogo de ação e aventura em plataforma 2D ambientado em um mundo pós-apocalíptico. Explore cenários em pixel art, enfrente perigos e avance por um ambiente marcado pelas consequências de um mundo em ruínas.",
     href: "https://zapinhor.itch.io/emovere",
     platform: "itch.io",
+    duration: "Cerca de 5 meses",
+    metrics: "Média de 20 downloads",
     images: [asset("/games/emovere/image.png"), asset("/games/emovere/2image.png"), asset("/games/emovere/3image.png"), asset("/games/emovere/4image.png")],
   },
   {
@@ -21,6 +23,8 @@ const smaugProjects = [
     description: "Uma visual novel focada na relação entre pai e filha, acompanhando os desafios de um pai de primeira viagem. A história aborda, de forma leve e emocional, as dificuldades, responsabilidades e aprendizados envolvidos na criação de uma criança.",
     href: "https://zapinhor.itch.io/mimada-sofia",
     platform: "itch.io",
+    duration: "Cerca de 5 meses",
+    metrics: "Média de 20 downloads",
     images: [asset("/games/mimada-sofia/image.png"), asset("/games/mimada-sofia/2image.png"), asset("/games/mimada-sofia/3image.png"), asset("/games/mimada-sofia/4image.png"), asset("/games/mimada-sofia/5image.png"), asset("/games/mimada-sofia/6image.png")],
   },
   {
@@ -31,6 +35,8 @@ const smaugProjects = [
     description: "Um jogo de terror psicológico baseado em exploração e narrativa ambiental. Conclua seu trabalho, participe de minigames e tente permanecer vivo enquanto investiga um condomínio aparentemente vazio. Explore seus corredores, descubra seus segredos e entenda por que restam tão poucos moradores.",
     href: "https://store.steampowered.com/app/3226550/Dont_Be_Scared__Episode_1_The_Lost_Soul/",
     platform: "Steam",
+    duration: "Cerca de 5 meses",
+    metrics: "1.743 downloads da demo · 76 downloads da versão paga · 260 wishlists",
     callout: "Conclua seu trabalho, faça minigames e permaneça vivo.",
     images: [asset("/games/dont-be-scared/1.png"), asset("/games/dont-be-scared/2.png"), asset("/games/dont-be-scared/3.png"), asset("/games/dont-be-scared/4.png"), asset("/games/dont-be-scared/5.png")],
   },
@@ -42,6 +48,8 @@ const smaugProjects = [
     description: "Um jogo de terror psicológico com estética psicodélica e ambientes inspirados em espaços liminares e no conceito de Backrooms. Explore cenários surreais e inquietantes enquanto tenta compreender a estranha realidade ao seu redor.",
     href: "https://zapinhor.itch.io/dream",
     platform: "itch.io",
+    duration: "Cerca de 5 meses",
+    metrics: "Média de 20 downloads",
     images: [asset("/games/dream/1.png"), asset("/games/dream/2.png"), asset("/games/dream/3.png"), asset("/games/dream/4.png")],
   },
   {
@@ -52,6 +60,8 @@ const smaugProjects = [
     description: "Um jogo de mistério e exploração que combina elementos de terror com referências à cultura pop. Investigue uma cidade enigmática, conheça seus habitantes e reúna pistas para desvendar os acontecimentos e segredos escondidos por trás de Nefrakstein.",
     href: "https://zapinhor.itch.io/nefrakstein",
     platform: "itch.io",
+    duration: "Cerca de 5 meses",
+    metrics: "30 downloads",
     images: [asset("/games/nefrakstein/1.png"), asset("/games/nefrakstein/2.png"), asset("/games/nefrakstein/3.png"), asset("/games/nefrakstein/4.png")],
   },
 ];
@@ -70,7 +80,7 @@ export default function Home() {
         <nav aria-label="Navegação principal">
           <a href="#smaug">SMAUG</a>
           <a href="#pokegotchi">Pokégotchi</a>
-          <a href="#sobre">Sobre</a>
+          <a href="#sobre">Sobre mim</a>
           <a href="#contato">Contato</a>
         </nav>
         <a className="availability" href="mailto:danilohp2011@hotmail.com"><span /> Disponível para projetos</a>
@@ -80,20 +90,27 @@ export default function Home() {
         <div className="hero-meta"><span>Game Developer</span><span>Web Developer</span><span>Osasco · SP</span></div>
         <h1>Desenvolvedor de jogos<br />e experiências <span>digitais.</span></h1>
         <div className="hero-bottom">
-          <p>Formado em Jogos Digitais pela FATEC Carapicuíba, transformo conceitos em protótipos jogáveis, interfaces e produtos para a web.</p>
+          <p>Formado no Curso Superior de Tecnologia em Jogos Digitais pela FATEC Carapicuíba, transformo ideias em jogos, sistemas interativos e aplicações para a web.</p>
           <a className="circle-link" href="#smaug" aria-label="Ver projetos SMAUG">↓</a>
         </div>
       </section>
 
       <section className="intro" id="sobre">
-        <p className="label">01 / Perfil</p>
+        <p className="label">01 / Sobre mim</p>
         <div className="intro-content">
-          <h2>Entre código, narrativa<br />e interação.</h2>
+          <h2>Curiosidade que virou<br />ofício.</h2>
           <div className="intro-copy">
-            <p>Sou desenvolvedor com foco em games e criação de sites. Minha formação me permitiu trabalhar em diferentes etapas da produção de jogos — da ideia ao protótipo jogável — enquanto o desenvolvimento web ampliou minha experiência com interfaces e experiências digitais.</p>
-            <p>Gosto de aprender novas tecnologias, resolver problemas e construir projetos que tenham uma identidade clara.</p>
+            <p>Sempre tive interesse por tecnologia e curiosidade para entender como as coisas funcionam. Grande parte do que aprendi começou de forma autodidata, por meio de vídeos, pesquisas e, principalmente, da prática. Ao longo dos anos, explorei diferentes áreas de hardware e software, testando ferramentas, resolvendo problemas e transformando a curiosidade em conhecimento técnico.</p>
+            <p>Minha relação com os jogos também começou cedo. Além de jogar, sempre tive interesse em observar como cada experiência era construída: suas mecânicas, ambientação, narrativa, sons e formas de interação. Essa paixão me levou ao desenvolvimento de jogos, área em que atuo há aproximadamente três anos, trabalhando principalmente com programação, sistemas e mecânicas de gameplay.</p>
+            <p>Paralelamente, desenvolvo projetos para a web há cerca de quatro anos, utilizando HTML, CSS e JavaScript na criação de sites e aplicações. Essa experiência ampliou minha visão sobre desenvolvimento, interação com o usuário e publicação de projetos, além de me permitir explorar integrações com APIs e outras tecnologias.</p>
+            <p>Hoje, meu objetivo é continuar evoluindo como desenvolvedor de jogos e web, participando de projetos nos quais eu possa contribuir tecnicamente e também expressar minha visão criativa. Quero produzir experiências próprias, alcançar diferentes públicos e construir jogos reconhecidos pelas ideias, pelo cuidado e pela identidade colocados em seu desenvolvimento.</p>
           </div>
         </div>
+        <aside className="experience-note">
+          <span>Experiência profissional</span>
+          <div><strong>Teleperformance</strong><small>nov/2024 — ago/2025</small></div>
+          <p>Atuação bilíngue em uma operação de grande volume, com média de aproximadamente 700 tickets por dia e desempenho superior a 90% nos indicadores acompanhados. A experiência fortaleceu minha disciplina, atenção a detalhes e comunicação em português e inglês.</p>
+        </aside>
         <div className="skills" aria-label="Tecnologias">{skills.map((skill) => <span key={skill}>{skill}</span>)}</div>
       </section>
 
@@ -120,30 +137,35 @@ export default function Home() {
                 </div>
               </div>
               <div className="compact-project-stack"><span>Tecnologias usadas</span><strong>{project.stack}</strong></div>
+              <div className="project-facts" aria-label={`Informações de desenvolvimento de ${project.title}`}>
+                <span><small>Desenvolvimento</small><strong>{project.duration}</strong></span>
+                <span><small>Alcance</small><strong>{project.metrics}</strong></span>
+              </div>
             </article>
           ))}
         </div>
       </section>
 
-      <section className="featured-project" id="pokemon-tamagotchi">
+      <section className="featured-project" id="pokegotchi">
         <div className="featured-heading">
           <p className="label">03 / Projeto em destaque</p>
           <div>
-            <span className="featured-kicker">Aplicação de console · C#</span>
-            <h2>Pokémon<br />Tamagotchi</h2>
+            <span className="featured-kicker">Aplicação web · JavaScript</span>
+            <h2>Pokégotchi</h2>
           </div>
         </div>
         <div className="featured-grid">
           <figure className="featured-visual">
-            <img src={asset("/pokemon-tamagotchi.png")} alt="Interface em console do Pokémon Tamagotchi mostrando o mascote Dreepy e seus status" />
-            <figcaption>Interface do jogo em execução</figcaption>
+            <img src={asset("/pokegotchi.png")} alt="Tela inicial do Pokégotchi com Pikachu e opções para iniciar ou continuar uma jornada" />
+            <figcaption>Interface atual da aplicação web</figcaption>
           </figure>
           <div className="featured-copy">
-            <p>Um tamagotchi inspirado no universo Pokémon, desenvolvido em C#. A experiência roda no terminal e permite adotar um mascote, acompanhar seus atributos e interagir por meio de ações como alimentar, brincar e dormir.</p>
-            <p>O projeto explora lógica de programação, orientação a objetos, persistência de dados e construção de menus interativos.</p>
-            <div className="featured-tags" aria-label="Tecnologias e recursos"><span>C#</span><span>.NET</span><span>Console</span><span>POO</span></div>
-            <a className="download-button" href="https://drive.google.com/file/d/1pybqrFdF97QAyaLOGlf2yHx1GyXW3GKI/view?usp=sharing" target="_blank" rel="noreferrer">Download para Windows <span>Google Drive</span></a>
-            <small>Executável hospedado no Google Drive.</small>
+            <p>Pokégotchi é uma aplicação web inspirada em mascotes virtuais, criada a partir do conceito desenvolvido inicialmente no Pokémon Tamagotchi em C#. O projeto transforma a experiência de terminal em uma interface acessível pelo navegador.</p>
+            <p>Iniciado em agosto de 2026 e em desenvolvimento constante, reúne lógica de estado, interações com o mascote, consumo de APIs e recursos de geolocalização. Novas mecânicas e melhorias são incorporadas continuamente.</p>
+            <div className="featured-tags" aria-label="Tecnologias e recursos"><span>JavaScript</span><span>HTML</span><span>CSS</span><span>APIs</span><span>Geolocalização</span></div>
+            <div className="featured-facts"><span><small>Início</small><strong>Agosto de 2026</strong></span><span><small>Status</small><strong>Em desenvolvimento constante</strong></span></div>
+            <a className="download-button" href="https://pokegotchi.com.br" target="_blank" rel="noreferrer">Acessar Pokégotchi <span>Aplicação web</span></a>
+            <small>Projeto disponível em pokegotchi.com.br.</small>
           </div>
         </div>
       </section>
@@ -154,25 +176,12 @@ export default function Home() {
           <h2>Sites claros, responsivos<br />e pensados para pessoas.</h2>
           <div><p>Desenvolvimento de páginas e interfaces para a web com atenção à estrutura, hierarquia visual e adaptação entre desktop e dispositivos móveis.</p><div className="web-stack"><span>Front-end</span><span>WordPress</span><span>UI / UX</span></div></div>
         </div>
-        <article className="pokegotchi-project" id="pokegotchi">
-          <div className="pokegotchi-preview" aria-label="Representação visual da interface retrô do Pokégotchi">
-            <img src={asset("/pokegotchi.png")} alt="Tela inicial do Pokégotchi com Pikachu, opções para continuar ou começar uma nova jornada e aviso de localização" />
-          </div>
-          <div className="pokegotchi-copy">
-            <span className="project-type">Projeto autoral · Aplicação web</span>
-            <h3>Pokégotchi</h3>
-            <p>Um bichinho virtual inspirado em Pokémon, Tamagotchi e nos jogos clássicos de Game Boy. A experiência reúne cuidados em tempo real, inventário, PokéMart, quartos e Boxes, capturas, minigames e batalhas com golpes e efetividade de tipos.</p>
-            <p>O projeto consome dados e sprites da PokéAPI, salva o progresso no navegador e utiliza geolocalização para adaptar clima e ciclo de dia e noite.</p>
-            <div className="pokegotchi-stack" aria-label="Tecnologias utilizadas">
-              <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>PokéAPI</span><span>Open-Meteo</span><span>LocalStorage</span><span>GitHub Pages</span>
-            </div>
-            <div className="pokegotchi-actions">
-              <a className="live-button" href="https://zapinhor.github.io/Pokegotchi/" target="_blank" rel="noreferrer">Acessar o Pokégotchi <Arrow /></a>
-              <a className="source-button" href="https://github.com/zapinhor/Pokegotchi" target="_blank" rel="noreferrer">Ver código no GitHub <Arrow /></a>
-            </div>
-          </div>
-        </article>
-        <a className="web-project" href="https://www.canva.com/design/DAFT1FEBIFU/opW7u-kxTWT3RjzeynqKUA/edit" target="_blank" rel="noreferrer" aria-label="Abrir apresentação do projeto acadêmico de e-commerce no Canva">
+        <a className="web-project featured-web" href="https://drive.google.com/file/d/1pybqrFdF97QAyaLOGlf2yHx1GyXW3GKI/view?usp=sharing" target="_blank" rel="noreferrer" aria-label="Baixar o Pokémon Tamagotchi para Windows">
+          <div><span>Aplicação de console · C# · cerca de 5 meses</span><h3>Pokémon Tamagotchi</h3></div>
+          <p>Versão original desenvolvida em C# e .NET. Permite adotar um mascote, acompanhar seus atributos e interagir com ações como alimentar, brincar e dormir. O projeto serviu como base conceitual e técnica para o Pokégotchi na web.</p>
+          <strong>Download para Windows <Arrow /></strong>
+        </a>
+        <a className="web-project secondary-web" href="https://www.canva.com/design/DAFT1FEBIFU/opW7u-kxTWT3RjzeynqKUA/edit" target="_blank" rel="noreferrer" aria-label="Abrir apresentação do projeto acadêmico de e-commerce no Canva">
           <div><span>Projeto acadêmico</span><h3>E-commerce de moda</h3></div>
           <p>Projeto de site para uma loja virtual de roupas. Embora não esteja mais publicado, a apresentação registra a proposta visual e a experiência desenvolvida.</p>
           <strong>Ver apresentação <Arrow /></strong>
