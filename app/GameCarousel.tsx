@@ -10,7 +10,7 @@ export default function GameCarousel({ title, images }: { title: string; images:
   return (
     <div className="game-carousel" aria-label={`Galeria de ${title}`}>
       <div className="carousel-frame">
-        <img src={images[current]} alt={`Captura ${current + 1} de ${title}`} />
+        <img key={images[current]} className="carousel-image" src={images[current]} alt={`Captura ${current + 1} de ${title}`} />
         <span className="carousel-count">{String(current + 1).padStart(2, "0")} / {String(images.length).padStart(2, "0")}</span>
       </div>
       <div className="carousel-controls">
