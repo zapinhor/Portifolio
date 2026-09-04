@@ -80,20 +80,21 @@ export default function Home() {
       <header className="header">
         <a className="name" href="#inicio">Danilo Petraglia</a>
         <nav aria-label="Navegação principal">
-          <a href="#smaug">SMAUG</a>
+          <a href="#smaug">Jogos</a>
+          <a href="#web">Web</a>
           <a href="#pokegotchi">Pokégotchi</a>
           <a href="#sobre">Sobre mim</a>
           <a href="#contato">Contato</a>
         </nav>
-        <a className="availability" href="mailto:danilohp2011@hotmail.com"><span /> Disponível para projetos</a>
+        <a className="availability" href="https://wa.me/5511997396671" target="_blank" rel="noreferrer"><span /> Disponível para projetos</a>
       </header>
 
       <section className="hero" id="inicio">
-        <div className="hero-meta"><span>Game Developer</span><span>Web Developer</span><span>Osasco · SP</span></div>
-        <h1>Desenvolvedor de jogos<br />e experiências <span>digitais.</span></h1>
+        <div className="hero-meta"><span>Game Developer</span><span>Full Stack Web Developer</span><span>Osasco · SP</span></div>
+        <h1>Desenvolvedor de jogos<br />e web <span>full stack.</span></h1>
         <div className="hero-bottom">
-          <p>Formado no Curso Superior de Tecnologia em Jogos Digitais pela FATEC Carapicuíba, transformo ideias em jogos, sistemas interativos e aplicações para a web.</p>
-          <a className="circle-link" href="#smaug" aria-label="Ver projetos SMAUG">↓</a>
+          <p>Crio jogos, sites, aplicações web e experiências digitais completas, unindo programação, identidade visual e atenção à experiência de uso.</p>
+          <a className="circle-link" href="#smaug" aria-label="Conhecer meus projetos">↓</a>
         </div>
       </section>
 
@@ -104,8 +105,8 @@ export default function Home() {
           <div className="intro-copy" data-reveal="right">
             <p>Sempre tive interesse por tecnologia e curiosidade para entender como as coisas funcionam. Grande parte do que aprendi começou de forma autodidata, por meio de vídeos, pesquisas e, principalmente, da prática. Ao longo dos anos, explorei diferentes áreas de hardware e software, testando ferramentas, resolvendo problemas e transformando a curiosidade em conhecimento técnico.</p>
             <p>Minha relação com os jogos também começou cedo. Além de jogar, sempre tive interesse em observar como cada experiência era construída: suas mecânicas, ambientação, narrativa, sons e formas de interação. Essa paixão me levou ao desenvolvimento de jogos, área em que atuo há aproximadamente três anos, trabalhando principalmente com programação, sistemas e mecânicas de gameplay.</p>
-            <p>Paralelamente, desenvolvo projetos para a web há cerca de quatro anos, utilizando HTML, CSS e JavaScript na criação de sites e aplicações. Essa experiência ampliou minha visão sobre desenvolvimento, interação com o usuário e publicação de projetos, além de me permitir explorar integrações com APIs e outras tecnologias.</p>
-            <p>Hoje, meu objetivo é continuar evoluindo como desenvolvedor de jogos e web, participando de projetos nos quais eu possa contribuir tecnicamente e também expressar minha visão criativa. Quero produzir experiências próprias, alcançar diferentes públicos e construir jogos reconhecidos pelas ideias, pelo cuidado e pela identidade colocados em seu desenvolvimento.</p>
+            <p>Paralelamente, atuo há cerca de quatro anos com desenvolvimento web. Trabalho na criação de sites institucionais, landing pages, e-commerce e aplicações responsivas, utilizando HTML, CSS e JavaScript, além de WordPress, integrações com APIs e recursos de back-end conforme as necessidades de cada projeto.</p>
+            <p>Hoje, busco evoluir como desenvolvedor de jogos e desenvolvedor web full stack, contribuindo tanto na construção técnica quanto na definição de soluções claras e funcionais. Meu objetivo é transformar ideias em produtos digitais bem estruturados, com identidade e uma experiência consistente para quem utiliza.</p>
           </div>
         </div>
         <aside className="experience-note" data-reveal>
@@ -172,11 +173,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="web-section" data-reveal>
+      <section className="web-section" id="web" data-reveal>
         <p className="label">04 / Desenvolvimento web</p>
         <div className="web-content" data-reveal>
-          <h2>Sites claros, responsivos<br />e pensados para pessoas.</h2>
-          <div><p>Desenvolvimento de páginas e interfaces para a web com atenção à estrutura, hierarquia visual e adaptação entre desktop e dispositivos móveis.</p><div className="web-stack"><span>Front-end</span><span>WordPress</span><span>UI / UX</span></div></div>
+          <h2>Da ideia ao site<br />pronto para crescer.</h2>
+          <div><p>Desenvolvimento full stack de sites e aplicações para a web, da construção das interfaces à integração de recursos e publicação. Cada projeto é pensado para funcionar bem em computadores e celulares, comunicar com clareza e facilitar a evolução do negócio.</p><div className="web-stack"><span>Sites institucionais</span><span>Landing pages</span><span>E-commerce</span><span>Aplicações web</span><span>Integração de APIs</span><span>Front-end e back-end</span></div></div>
+        </div>
+        <div className="web-services" aria-label="Experiência em desenvolvimento web" data-reveal>
+          <span><small>01</small><strong>Sites responsivos</strong><p>Interfaces adaptadas a diferentes telas, com estrutura clara, desempenho e navegação objetiva.</p></span>
+          <span><small>02</small><strong>E-commerce</strong><p>Estruturação de lojas virtuais, páginas de produtos e jornadas de compra voltadas à conversão.</p></span>
+          <span><small>03</small><strong>Aplicações e integrações</strong><p>Recursos interativos, consumo de APIs e conexão entre interface, dados e regras do projeto.</p></span>
         </div>
         <a className="web-project featured-web" href="https://drive.google.com/file/d/1pybqrFdF97QAyaLOGlf2yHx1GyXW3GKI/view?usp=sharing" target="_blank" rel="noreferrer" aria-label="Baixar o Pokémon Tamagotchi para Windows" data-reveal>
           <div><span>Aplicação de console · C# · cerca de 5 meses</span><h3>Pokémon Tamagotchi</h3></div>
@@ -193,14 +199,18 @@ export default function Home() {
       <section className="contact" id="contato" data-reveal>
         <p className="label">05 / Contato</p>
         <h2>Vamos construir<br />algo juntos.</h2>
-        <a className="email" href="mailto:danilohp2011@hotmail.com">danilohp2011@hotmail.com <Arrow /></a>
+        <div className="contact-actions">
+          <a className="email" href="mailto:contatodanilohp@gmail.com">contatodanilohp@gmail.com <Arrow /></a>
+          <a className="whatsapp" href="https://wa.me/5511997396671" target="_blank" rel="noreferrer"><span>WhatsApp</span><strong>(11) 99739-6671</strong><Arrow /></a>
+        </div>
         <div className="links">
+          <a href="https://github.com/zapinhor" target="_blank" rel="noreferrer">GitHub <Arrow /></a>
           <a href="https://www.linkedin.com/in/danilopetraglia/" target="_blank" rel="noreferrer">LinkedIn <Arrow /></a>
           <a href="https://zapinhor.itch.io/" target="_blank" rel="noreferrer">itch.io <Arrow /></a>
         </div>
       </section>
 
-      <footer><span>Danilo Petraglia</span><span>Game & Web Developer</span><a href="#inicio">Voltar ao topo ↑</a></footer>
+      <footer><span>Danilo Petraglia</span><span>Game Developer & Full Stack Web Developer</span><a href="#inicio">Voltar ao topo ↑</a></footer>
     </main>
   );
 }
