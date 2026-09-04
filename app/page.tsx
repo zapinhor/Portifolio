@@ -1,7 +1,8 @@
 import GameCarousel from "./GameCarousel";
+import MobileNav from "./MobileNav";
 import ScrollReveal from "./ScrollReveal";
 
-const asset = (path: string) => `/Portfolio${path}`;
+const asset = (path: string) => `/Portfolio${path.startsWith("/games/") ? path.replace(/\.png$/, ".webp") : path}`;
 
 const smaugProjects = [
   {
@@ -68,6 +69,7 @@ const smaugProjects = [
 ];
 
 const skills = ["C#", "Unity", "Unreal Engine", "Construct 3", "Ren'Py", "Python", "HTML", "CSS", "JavaScript", "WordPress"];
+const gameRole = "Programação, implementação de sistemas e mecânicas, montagem do projeto na engine e aplicação de level design, interfaces, identidade visual e efeitos sonoros.";
 
 function Arrow() {
   return <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M5 3h8v8" /></svg>;
@@ -87,6 +89,7 @@ export default function Home() {
           <a href="#contato">Contato</a>
         </nav>
         <a className="availability" href="https://wa.me/5511997396671" target="_blank" rel="noreferrer"><span /> Disponível para projetos</a>
+        <MobileNav />
       </header>
 
       <section className="hero" id="inicio">
@@ -140,6 +143,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="compact-project-stack"><span>Tecnologias usadas</span><strong>{project.stack}</strong></div>
+              <div className="project-role"><small>Minha atuação</small><p>{gameRole}</p></div>
               <div className="project-facts" aria-label={`Informações de desenvolvimento de ${project.title}`}>
                 <span><small>Desenvolvimento</small><strong>{project.duration}</strong></span>
                 <span><small>Alcance</small><strong>{project.metrics}</strong></span>
@@ -159,7 +163,7 @@ export default function Home() {
         </div>
         <div className="featured-grid">
           <figure className="featured-visual" data-reveal="left">
-            <img src={asset("/pokegotchi.png")} alt="Tela inicial do Pokégotchi com Pikachu e opções para iniciar ou continuar uma jornada" />
+            <img src={asset("/pokegotchi.png")} alt="Tela inicial do Pokégotchi com Pikachu e opções para iniciar ou continuar uma jornada" loading="lazy" decoding="async" />
             <figcaption>Interface atual da aplicação web</figcaption>
           </figure>
           <div className="featured-copy" data-reveal="right">
@@ -167,6 +171,7 @@ export default function Home() {
             <p>Iniciado em agosto de 2026 e em desenvolvimento constante, reúne lógica de estado, interações com o mascote, consumo de APIs e recursos de geolocalização. Novas mecânicas e melhorias são incorporadas continuamente.</p>
             <div className="featured-tags" aria-label="Tecnologias e recursos"><span>JavaScript</span><span>HTML</span><span>CSS</span><span>APIs</span><span>Geolocalização</span></div>
             <div className="featured-facts"><span><small>Início</small><strong>Agosto de 2026</strong></span><span><small>Status</small><strong>Em desenvolvimento constante</strong></span></div>
+            <div className="featured-role"><small>Minha atuação</small><p>Projeto individual desenvolvido integralmente por mim, da programação full stack e integrações à construção da interface, identidade visual e publicação.</p></div>
             <a className="download-button" href="https://pokegotchi.com.br" target="_blank" rel="noreferrer">Acessar Pokégotchi <span>Aplicação web</span></a>
             <small>Projeto disponível em pokegotchi.com.br.</small>
           </div>
@@ -186,12 +191,12 @@ export default function Home() {
         </div>
         <a className="web-project featured-web" href="https://drive.google.com/file/d/1pybqrFdF97QAyaLOGlf2yHx1GyXW3GKI/view?usp=sharing" target="_blank" rel="noreferrer" aria-label="Baixar o Pokémon Tamagotchi para Windows" data-reveal>
           <div><span>Aplicação de console · C# · cerca de 5 meses</span><h3>Pokémon Tamagotchi</h3></div>
-          <p>Versão original desenvolvida em C# e .NET. Permite adotar um mascote, acompanhar seus atributos e interagir com ações como alimentar, brincar e dormir. O projeto serviu como base conceitual e técnica para o Pokégotchi na web.</p>
+          <div className="web-project-copy"><p>Versão original desenvolvida em C# e .NET. Permite adotar um mascote, acompanhar seus atributos e interagir com ações como alimentar, brincar e dormir. O projeto serviu como base conceitual e técnica para o Pokégotchi na web.</p><p className="role-summary"><small>Minha atuação</small> Projeto individual: programação, lógica, estrutura da aplicação e desenvolvimento completo em C#.</p></div>
           <strong>Download para Windows <Arrow /></strong>
         </a>
         <a className="web-project secondary-web" href="https://www.canva.com/design/DAFT1FEBIFU/opW7u-kxTWT3RjzeynqKUA/edit" target="_blank" rel="noreferrer" aria-label="Abrir apresentação do projeto acadêmico de e-commerce no Canva" data-reveal>
           <div><span>Projeto acadêmico</span><h3>E-commerce de moda</h3></div>
-          <p>Projeto de site para uma loja virtual de roupas. Embora não esteja mais publicado, a apresentação registra a proposta visual e a experiência desenvolvida.</p>
+          <div className="web-project-copy"><p>Projeto de site para uma loja virtual de roupas. Embora não esteja mais publicado, a apresentação registra a proposta visual e a experiência desenvolvida.</p><p className="role-summary"><small>Minha atuação</small> Projeto acadêmico desenvolvido em equipe.</p></div>
           <strong>Ver apresentação <Arrow /></strong>
         </a>
       </section>
